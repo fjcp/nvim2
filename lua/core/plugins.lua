@@ -236,12 +236,6 @@ packer.startup {
       end,
     }
 
-    -- Fuzzy finder syntax support
-    use {
-      "nvim-telescope/telescope-fzf-native.nvim",
-      run = "make",
-    }
-
     -- Git integration
     use {
       "lewis6991/gitsigns.nvim",

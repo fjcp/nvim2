@@ -43,6 +43,7 @@ map("n", "<leader>ss", "<cmd>SessionSave<CR>", opts)
 
 -- Telescope
 map("n", "<leader>fw", "<cmd>Telescope live_grep<CR>", opts)
+map("n", "<leader>fg", "<cmd>Telescope git_files<CR>", opts)
 map("n", "<leader>gt", "<cmd>Telescope git_status<CR>", opts)
 map("n", "<leader>gc", "<cmd>Telescope git_commits<CR>", opts)
 map("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opts)
@@ -63,12 +64,6 @@ map("n", "<C-d>", "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1)<
 -- Comment
 map("n", "<leader>/", "<cmd>lua require('Comment.api').toggle_current_linewise()<CR>", opts)
 map("v", "<leader>/", "<esc><cmd>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<CR>", opts)
-
--- ForceWrite
-map("n", "<C-w>", "<cmd>w!<CR>", opts)
-
--- ForceQuit
-map("n", "<C-q>", "<cmd>q!<CR>", opts)
 
 -- Terminal
 map("n", "<C-\\>", "<cmd>ToggleTerm<CR>", opts)
