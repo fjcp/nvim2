@@ -246,13 +246,16 @@ packer.startup {
       disable = not config.enabled.gitsigns,
     }
 
-    -- Start screen
     use {
-      "glepnir/dashboard-nvim",
-      config = function()
-        require("configs.dashboard").config()
-      end,
-      disable = not config.enabled.dashboard,
+      'goolord/alpha-nvim',
+       requires = { 'kyazdani42/nvim-web-devicons' },
+       config = function ()
+        require'alpha'.setup(require'alpha.themes.startify'.config)
+       end
+    }
+
+    use {
+      "skywind3000/asyncrun.vim"
     }
 
     -- Color highlighting
@@ -333,6 +336,10 @@ packer.startup {
           keys = "<ESC>",
         }
       end,
+    }
+
+    use {
+      "sbdchd/neoformat"
     }
 
     -- User defined plugins
