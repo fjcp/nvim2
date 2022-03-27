@@ -173,6 +173,8 @@ packer.startup {
       "hrsh7th/cmp-nvim-lsp",
     }
 
+    use {"f3fora/cmp-spell"}
+
     -- LSP manager
     use {
       "williamboman/nvim-lsp-installer",

@@ -93,6 +93,13 @@ function M.config()
     padding = { left = 2, right = 1 },
   }
 
+  ins_left{
+    "filename",
+    file_status = true,
+    path = 1,
+    shorting_target = 40,
+  }
+
   ins_left {
     "diff",
     symbols = { added = " ", modified = "柳", removed = " " },
