@@ -17,7 +17,7 @@ packer.startup {
 
     -- Optimiser
     use {
-      "lewis6991/impatient.nvim",
+  --    "lewis6991/impatient.nvim",
     }
 
     -- Lua functions
@@ -172,8 +172,6 @@ packer.startup {
     use {
       "hrsh7th/cmp-nvim-lsp",
     }
-
-    use {"f3fora/cmp-spell"}
 
     -- LSP manager
     use {

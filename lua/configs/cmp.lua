@@ -83,8 +83,6 @@ function M.config()
       { name = "luasnip" },
       { name = "buffer" },
       { name = "path" },
-      { name = "spell" },
-      { name = "dictionary" },
     },
     mapping = {
       ["<C-k>"] = cmp.mapping.select_prev_item(),
